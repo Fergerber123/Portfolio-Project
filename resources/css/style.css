@@ -5,6 +5,7 @@ html {
 
 body {
   margin: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
 }
 
 header {
@@ -25,8 +26,8 @@ header {
   width: 100%;
   background-image: linear-gradient(
     215deg,
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.8)
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.6)
   );
   justify-content: space-evenly;
   align-items: center;
@@ -59,7 +60,7 @@ header {
   line-height: 1.25;
   color: aqua;
   background-color: black;
-  position: sticky;
+  position: static;
   border: whitesmoke 5px solid;
   border-radius: 10px;
   padding: 20px;
@@ -75,6 +76,12 @@ header {
   text-decoration: none;
   font-size: 30px;
   color: rgb(0, 216, 216);
+}
+
+#aboutme-skills {
+  margin: 40px;
+  border: #1d6161 5px double;
+  border-radius: 10px;
 }
 
 .aboutme {
@@ -94,8 +101,8 @@ header {
 .aboutme h2 {
   margin-bottom: 60px;
   font-size: 3rem;
-  text-align-last: right;
-  border-bottom: rgb(0, 0, 0) 3px ridge;
+  text-align: right;
+  border-bottom: #1d6161 3px ridge;
   box-sizing: border-box;
 }
 
@@ -104,20 +111,70 @@ header {
   font-size: 1.5rem;
 }
 
-.skills h2 {
-  font-size: 3rem;
-  text-align: center;
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.skills p {
+.skills-container #skills-text {
+  margin: 50px 150px;
+  width: 40%;
+  background-color: #1d6161;
+  border: #1d6161 8px double;
+  padding: 40px;
+  border-radius: 10px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills-container h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0 0 35px 0;
+}
+
+.skills-container p {
+  box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.4);
+  letter-spacing: 1px;
+  padding: 20px;
+  border-radius: 10px;
+  background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  -webkit-text-fill-color: initial;
+  background-color: #1d6161;
+  color: whitesmoke;
   font-size: 1.45rem;
   text-align: center;
 }
 
-.projects h2 {
+#skills #skills-icons {
+  height: 110px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#skills #skills-icons img {
+  width: 6rem;
+  height: 6rem;
+  box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 25%;
+  transition: 200ms;
+}
+
+#skills #skills-icons img:hover {
+  width: 6.25rem;
+  height: 6.25rem;
+}
+
+#projects h2 {
   font-size: 3rem;
 }
 
-.contact h2 {
+#contact h2 {
   font-size: 3rem;
 }
