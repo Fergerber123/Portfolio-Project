@@ -4,8 +4,13 @@ html {
 }
 
 body {
+  font-family: "Ysabeau Office", sans-serif;
   margin: 0;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+}
+
+h2 {
+  font-family: "Castoro Titling", cursive;
 }
 
 header {
@@ -43,7 +48,9 @@ header {
 }
 
 .name h1 {
-  font-size: 60px;
+  font-family: "Gloock", serif;
+  letter-spacing: 2px;
+  font-size: 75px;
   margin: 0;
   background-repeat: repeat;
   background-size: 100%;
@@ -51,8 +58,6 @@ header {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
 }
 
 #header-container nav {
@@ -60,11 +65,17 @@ header {
   line-height: 1.25;
   color: aqua;
   background-color: black;
-  position: static;
   border: whitesmoke 5px solid;
   border-radius: 10px;
   padding: 20px;
   margin: 150px 0 0 150px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 80%;
+  transition-duration: 0.5s;
 }
 
 #header-container nav ul {
@@ -99,6 +110,7 @@ header {
 }
 
 .aboutme h2 {
+  font-family: "Times New Roman", Times, serif;
   margin-bottom: 60px;
   font-size: 3rem;
   text-align: right;
@@ -173,8 +185,48 @@ header {
 
 #projects h2 {
   font-size: 3rem;
+  text-align: center;
+  color: #1d6161;
+}
+
+#contact {
+  margin: 0 15%;
+  margin-bottom: 30px;
 }
 
 #contact h2 {
-  font-size: 3rem;
+  font-size: 2.8rem;
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #1d6161;
+}
+
+#contact .contactid {
+  margin: 0 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: #1d6161 10px dotted;
+}
+
+.contactid i {
+  font-size: 1.5rem;
+}
+
+#contact-icons {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact-icons img:hover {
+  border-radius: 25%;
+  box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.4);
+}
+
+#contact-icons img {
+  width: 6.8rem;
+  height: 6.8 rem;
 }
