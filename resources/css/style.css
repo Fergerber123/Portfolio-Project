@@ -166,7 +166,7 @@ header {
   margin-bottom: 40px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -177,6 +177,80 @@ header {
   border-radius: 25%;
   transition: 200ms;
 }
+
+.pos1 {
+  animation: anim1 2s ease 300ms forwards;
+}
+
+.neg1 {
+  animation: animn1 2s ease 300ms forwards;
+}
+
+.pos2 {
+  animation: anim2 1.5s ease 500ms forwards;
+}
+
+.neg2 {
+  animation: animn2 1.5s ease 500ms forwards;
+}
+
+.pos3 {
+  animation: anim3 1s ease 700ms forwards;
+}
+
+.neg3 {
+  animation: animn3 1s ease 700ms forwards;
+}
+
+@keyframes anim1 {
+  0% {
+  }
+  100% {
+    transform: translate(750%);
+  }
+}
+
+@keyframes animn1 {
+  0% {
+  }
+  100% {
+    transform: translate(-750%);
+  }
+}
+
+@keyframes anim2 {
+  0% {
+  }
+  100% {
+    transform: translate(500%);
+  }
+}
+
+@keyframes animn2 {
+  0% {
+  }
+  100% {
+    transform: translate(-500%);
+  }
+}
+
+@keyframes anim3 {
+  0% {
+  }
+  100% {
+    transform: translate(250%);
+  }
+}
+
+@keyframes animn3 {
+  0% {
+  }
+  100% {
+    transform: translate(-250%);
+  }
+}
+
+
 
 #skills #skills-icons img:hover {
   width: 6.25rem;
