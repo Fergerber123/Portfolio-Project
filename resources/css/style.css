@@ -4,6 +4,7 @@ html {
 }
 
 body {
+  width: 100vw;
   font-family: "Ysabeau Office", sans-serif;
   margin: 0;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
@@ -206,7 +207,7 @@ header {
   0% {
   }
   100% {
-    transform: translate(30dvw);
+    transform: translate(30vw);
   }
 }
 
@@ -214,7 +215,7 @@ header {
   0% {
   }
   100% {
-    transform: translate(-30dvw);
+    transform: translate(-30vw);
   }
 }
 
@@ -222,7 +223,7 @@ header {
   0% {
   }
   100% {
-    transform: translate(20dvw);
+    transform: translate(20vw);
   }
 }
 
@@ -230,7 +231,7 @@ header {
   0% {
   }
   100% {
-    transform: translate(-20dvw);
+    transform: translate(-20vw);
   }
 }
 
@@ -238,7 +239,7 @@ header {
   0% {
   }
   100% {
-    transform: translate(10dvw);
+    transform: translate(10vw);
   }
 }
 
@@ -246,7 +247,7 @@ header {
   0% {
   }
   100% {
-    transform: translate(-10dvw);
+    transform: translate(-10vw);
   }
 }
 
