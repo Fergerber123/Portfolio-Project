@@ -43,3 +43,18 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(document.querySelector("#skills-icons"));
+
+/*<script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const a = entry.target.querySelector(".icon-stack");
+        if (entry.isIntersecting) {
+          a.classList.add("tryme");
+          return;
+        }
+        a.classList.remove("tryme");
+      });
+    });
+
+    observer.observe(document.querySelector(".icon-stack"));
+  </script>*/
