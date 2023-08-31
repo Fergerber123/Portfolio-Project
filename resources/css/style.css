@@ -186,6 +186,10 @@ header {
   transition: 200ms;
 }
 
+#midicon {
+  z-index: 2;
+}
+
 .pos1 {
   animation: anim1 2s ease 300ms forwards;
 }
